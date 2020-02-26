@@ -1,7 +1,10 @@
 import datetime
 import sys
 import time
+<<<<<<< HEAD
 
+=======
+>>>>>>> dev1
 for i in range(1, 31):
     if i < 10:
         time_start = '19:0' + str(i)
@@ -17,6 +20,7 @@ all_status = {
      }
 with open(r'C:\Username\any.log') as f:
     reader = f.readlines()
+    print(reader)
     for read in reader:
         if time_start in read:
             if 'status_1' in read:
