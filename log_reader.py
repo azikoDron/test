@@ -1,4 +1,5 @@
 import datetime
+import sys
 
 for i in range(1, 31):
     if i < 10:
@@ -37,5 +38,6 @@ with open(r'C:\Username\any.log') as f:
                 all_status['status_3'] = int(read[15:])
             if 'status_4' in read:
                 all_status['status_4'] = int(read[15:])
+		print(all_status)
             if 'status_5' in read:
                 all_status['status_5'] = int(read[15:])
